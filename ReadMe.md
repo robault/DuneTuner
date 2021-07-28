@@ -1,5 +1,5 @@
 
-# DuneTuner - home made light tree
+# DuneTuner - DYI light tree
 
 This was one of my favorite projects even though I can't call it a success. The code was "good enough" but the hardware side lacked stability for it to be useful. It operated like any light tree but with sizes specific to drag racing ATVs on the sand. The light tree used LED flashlights fed by 5 volts from the Phidgets 8/8/8 controller. The sensors were Phidgets light sensors which tripped when a laser was interupted. The power was fed on one side of the run using cat5 cable to all the lasers and the sensors were fed power and sent signal back to the controller along the other side of the run. There was a set of launch sensors, a set to capture 60 foot times and another set for 300 foot times. The code itself is very very simple. The only thing not contained in the project is a database with a table for storing the run data. Although the table structure is easy enough to infer from the INSERTs and SELECTs in the code. Something like this:
 
