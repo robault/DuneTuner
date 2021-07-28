@@ -7,6 +7,8 @@ This was one of my favorite projects even though I can't call it a success. The 
 INSERT INTO DT_Runs (stage1Time, stage2Time, sixtyFootTime, EndTimeStart, EndTimeEnd, Name, Notes, FinalReactionTime, FinalSixtyFootTime, FinalEndTime, FinalMPH)
 `
 
+You can also restore the database backup file "DuneTuner.bak" and adjust the SqlConnection in the code for authentication as needed. I honestly forgot that file existed and I have no idea if it contains data from this original test. Maybe it'll be like opening a time capsule for you?!
+
 ## Screenshots
 
 This is what I tried to show in the videos below. You can adjust sensitivity of each sensor, test the light tree and sensros, stop/save/reset the run by name with notes, select previous runs saved in the database to view in the chart, and see a live read out as the sensors are tripped during the run.
