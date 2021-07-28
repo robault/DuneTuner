@@ -1,0 +1,17 @@
+﻿Color Mappings:
+
+Brown - Brown
+Green - Black
+Orange - Red
+Blue - Blue
+BrownWhite - NONE
+GreenWhite - Green
+OrangeWhite - Orange
+BlueWhite - Purple
+
+Sensor 1 - Green
+Sensor 2 - Brown
+Sensor 3 - Purple
+Sensor 4 - Orange
+Sensor 5 - Blue
+

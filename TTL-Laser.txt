@@ -1,0 +1,8 @@
+Red = 5-12v positive
+Black = 5-12v negative
+Green = unused
+White = 5-12v negative
+
+TTL = Transistor Transistor Logic
+
+Hook up the Red and the Black, the White is on atransistor so the laser can be switched on and off by completing the circuit on the negative side to the switch in the transistor. This applies a negative voltage to the gate creating a pathway for electrons to flow. When no negative power is applied to the transsitor the gate remains in an off state.
