@@ -7,7 +7,15 @@ This was one of my favorite projects even though I can't call it a success. The 
 INSERT INTO DT_Runs (stage1Time, stage2Time, sixtyFootTime, EndTimeStart, EndTimeEnd, Name, Notes, FinalReactionTime, FinalSixtyFootTime, FinalEndTime, FinalMPH)
 `
 
-### Videos (circa July 2009)
+## Screenshots
+
+This is what I tried to show in the videos below. You can adjust sensitivity of each sensor, test the light tree and sensros, stop/save/reset the run by name with notes, select previous runs saved in the database to view in the chart, and see a live read out as the sensors are tripped during the run.
+![Main Form](/mainform.PNG)
+
+This is the super simple sensor form used to test laser alignment of the whole track. Aligning took a second person where we used our phones to direct the positioning of the lasers and sensors until a steady beam was achieved. The sensors provide 0 to 999, the number correlating to the maount of light was illuminating the sensor. As the front tire from the bike interupted the beam the value would fall. After adjusting the threshold I was able to determine a consistent point where the bike was reaching the stage of the track. While the precision wasn't good enough for an absolute measurement, it was certainly good enough for a relative one that provided feedback on race technique and bike operation.
+![Sensor Config Form](/sensorconfig.PNG)
+
+## Videos (circa July 2009)
 
 I've dug into the cobwebs of the past to find some old smart phone videos I captured the first and only time this was setup. Each is very short and absent of the production quality you find on YouTube today. Fortunately they are about a minute or less, and arguably contain little helpful information. Still, its proof this was actually used at one point.
 
@@ -32,16 +40,16 @@ In this video I try again to capture the form and realize its still too pixelate
 A good run of the bike, nice launch, quick reaction time and the carb was more dialied in by then. A moderate success using this light tree system to help practice take offs and tune the 250R.
 [![016 just the bike](https://img.youtube.com/vi/lt818_yUrpc/0.jpg)](https://www.youtube.com/watch?v=lt818_yUrpc)
 
-### Electrical
+## Electrical
 
-##### Tree lights
+### Tree lights
 
 These were retail LED flashlights that were taken apart and wired with cat5 to go ot the Phidgets 8/8/8 controller. They worked well but were not bright enough in full daylight. The 5 volts feeding each was more than the 2 AA batteries it was designed for but still not enough to make it obvious to the rider. 
 
 I would improve this by housing them in a pipe with the inside coated in silver flake paint with another larger pipe coated in flat black on the outside of that. Something like a [DSLR camera lense hood](https://www.amazon.com/55mm-Set-Camera-Lens-Hoods/dp/B07VF139D3). This would darken the light lense when it was off and scatter a bit more when on. The light being emitted would be surrounded by a bit of black making it more obvious. 
 Bike reflectors were affixted to the end of the flashlights for the desired color.
 
-##### Lasers & Sensors
+### Lasers & Sensors
 
 [Phidgets Precision Light Sensor](https://www.phidgets.com/?tier=3&catid=8&pcid=6&prodid=99) was used with a [TTL Laser](http://blog.trossenrobotics.com/2008/05/28/ttl-controlled-laser/) for each stage. This required alligning the laser to the sensor acorss the track. Given the distance (did we set it up at 30 feet?) the beam width did a great job covering the sensor through some plumbing pipe. Each was mounted to a cinder block and that was the biggest problem in the whole system. I did not account for the amount of energy the paddles of the tires would transmit though the sand. This caused the sensors to jitter too much and I had to increase the sensitivity threshold to compensate. This alone wasn't so bad, but the vibrations would cause the cinder blocks to "walk" a little, eventually needing realignment every other run. 
 
@@ -49,7 +57,7 @@ A big improvment would be using a screw in mount to anchor the sensors and laser
 
 Bike relfectors were used in the sensor tubes to help scatter the laser light, all of which were red like the laser, which seemed to scatter the best of the different colors I had on hand.
 
-### Finally
+## Finally
 
 This was a fun project and I highly encourage others to try things like this. I definitley didn't start any trend nor did I cover much new ground comapred to the companies that already build things like this. But it was fairly low cost and did seem to work, even if some implementation problems kept this from being perfect. 
 
