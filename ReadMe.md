@@ -12,9 +12,11 @@ You can also restore the database backup file "DuneTuner.bak" and adjust the Sql
 ## Screenshots
 
 This is what I tried to show in the videos below. You can adjust sensitivity of each sensor, test the light tree and sensros, stop/save/reset the run by name with notes, select previous runs saved in the database to view in the chart, and see a live read out as the sensors are tripped during the run.
+
 ![Main Form](/mainform.PNG)
 
 This is the super simple sensor form used to test laser alignment of the whole track. Aligning took a second person where we used our phones to direct the positioning of the lasers and sensors until a steady beam was achieved. The sensors provide 0 to 999, the number correlating to the maount of light was illuminating the sensor. As the front tire from the bike interupted the beam the value would fall. After adjusting the threshold I was able to determine a consistent point where the bike was reaching the stage of the track. While the precision wasn't good enough for an absolute measurement, it was certainly good enough for a relative one that provided feedback on race technique and bike operation.
+
 ![Sensor Config Form](/sensorconfig.PNG)
 
 ## Videos (circa July 2009)
@@ -22,24 +24,31 @@ This is the super simple sensor form used to test laser alignment of the whole t
 I've dug into the cobwebs of the past to find some old smart phone videos I captured the first and only time this was setup. Each is very short and absent of the production quality you find on YouTube today. Fortunately they are about a minute or less, and arguably contain little helpful information. Still, its proof this was actually used at one point.
 
 This first video is a very brief overview of the system.
+
 [![006 overview](https://img.youtube.com/vi/WmsJRQnDLLc/0.jpg)](https://www.youtube.com/watch?v=WmsJRQnDLLc)
 
 This short video shows the sensor config form. You can see the jitter from the sensors in part due to the wind pushing the lasers off the optimal target of the sensor on the other side of the track.
+
 [![007 sensors](https://img.youtube.com/vi/Ha2IwATGzFo/0.jpg)](https://www.youtube.com/watch?v=Ha2IwATGzFo)
 
 Warm up of the bike and my attempt at trying to pretend a 2009 smart phone had enough pixels to make a decent video.
+
 [![008 pre first run](https://img.youtube.com/vi/fH8IzMpRkvI/0.jpg)](https://www.youtube.com/watch?v=fH8IzMpRkvI)
 
 The first run produced a type casting exception, which I found odd considering everything worked at home with no issues during testing.
+
 [![010 first run exception](https://img.youtube.com/vi/GKWXqIxdrTc/0.jpg)](https://www.youtube.com/watch?v=GKWXqIxdrTc)
 
 The second run caused the second type casting error. After digging into the problem in the feild I relaized it had to do with .Net 1.1 using underlying OS libraries. I had moved my code from Vista at home to a laptop running Windopws 2000 and needed to account for the difference.
+
 [![011 second run still debuging](https://img.youtube.com/vi/yuUYOG7avys/0.jpg)](https://www.youtube.com/watch?v=yuUYOG7avys)
 
 In this video I try again to capture the form and realize its still too pixelated, so I read off the data that's being captured.
+
 [![013 form explanation](https://img.youtube.com/vi/MjRSHvc9Tnk/0.jpg)](https://www.youtube.com/watch?v=MjRSHvc9Tnk)
 
 A good run of the bike, nice launch, quick reaction time and the carb was more dialied in by then. A moderate success using this light tree system to help practice take offs and tune the 250R.
+
 [![016 just the bike](https://img.youtube.com/vi/lt818_yUrpc/0.jpg)](https://www.youtube.com/watch?v=lt818_yUrpc)
 
 ## Electrical
